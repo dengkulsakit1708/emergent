@@ -136,7 +136,7 @@ const MarineProjectSupport = () => {
         <div className="container-x relative">
           <div className="max-w-3xl mb-14">
             <div className="eyebrow text-[#00AEEF] mb-4">{t("Project Lifecycle", "Siklus Proyek")}</div>
-            <h2 className="font-display font-bold text-3xl md:text-5xl leading-tight">
+            <h2 className="font-display font-bold text-3xl md:text-5xl leading-tight text-white">
               {t("From planning to demobilization — we support every phase.", "Dari planning hingga demobilization — kami mendukung setiap fase.")}
             </h2>
           </div>

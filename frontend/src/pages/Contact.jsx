@@ -25,7 +25,8 @@ const Contact = () => {
 
   const submit = async (e) => {
     e.preventDefault();
-    if (!form.name || !form.email || !form.message) {
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      e.stopPropagation();
       setStatus({ state: "error", message: t("Please fill in name, email, and message.", "Mohon isi nama, email, dan pesan.") });
       return;
     }
@@ -173,7 +174,6 @@ const Contact = () => {
                       value={form.email}
                       onChange={update("email")}
                       type="email"
-                      required
                       className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/15 transition-all bg-white text-[#1F2933]"
                     />
                   </div>
@@ -212,7 +212,6 @@ const Contact = () => {
                       data-testid="input-message"
                       value={form.message}
                       onChange={update("message")}
-                      required
                       rows={6}
                       className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-[#00AEEF] focus:ring-2 focus:ring-[#00AEEF]/15 transition-all bg-white text-[#1F2933] resize-y"
                       placeholder={t("Tell us about your project, technology need, or partnership inquiry.", "Ceritakan tentang proyek, kebutuhan teknologi, atau inquiry partnership Anda.")}
