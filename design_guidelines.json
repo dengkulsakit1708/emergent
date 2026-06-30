@@ -1,0 +1,96 @@
+{
+  "theme": "light",
+  "archetype": "4",
+  "archetype_name": "Swiss & High-Contrast (Corporate Tech)",
+  "colors": {
+    "primary": "#071E3D",
+    "primary_dark": "#0B2F5B",
+    "accent": "#00AEEF",
+    "background": "#FFFFFF",
+    "surface": "#F5F7FA",
+    "surface_light": "#EAF7FF",
+    "text_main": "#1F2933",
+    "text_muted": "#4B5563",
+    "border": "#E5E7EB"
+  },
+  "typography": {
+    "headings": "Outfit, sans-serif",
+    "body": "Manrope, sans-serif",
+    "mono": "IBM Plex Mono, monospace"
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_gap": "py-24 md:py-32",
+    "grid_system": "Bento grids with generous gap-6 to gap-8",
+    "cards": "Rounded corners (rounded-xl), soft ambient shadows (shadow-lg), subtle 1px border"
+  },
+  "ui_elements": {
+    "buttons": {
+      "primary": "bg-[#00AEEF] text-white hover:bg-[#0092c8] rounded-md px-6 py-3 font-semibold transition-all shadow-md hover:shadow-lg",
+      "secondary": "border-2 border-[#071E3D] text-[#071E3D] hover:bg-[#F5F7FA] rounded-md px-6 py-3 font-semibold transition-all"
+    },
+    "cards": {
+      "default": "bg-white rounded-xl border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 transition-transform hover:-translate-y-1 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)]",
+      "glass": "bg-white/80 backdrop-blur-xl border border-white/20 shadow-sm"
+    },
+    "header": "Sticky header with crystal glassmorphism (bg-white/90 backdrop-blur-md z-50) and mega-menu feel for Business submenu."
+  },
+  "visual_enhancers": {
+    "background_patterns": "Subtle SVG bathymetry/sonar lines or grid patterns (opacity 5%) overlay on solid backgrounds to reflect marine technology.",
+    "icons": "lucide-react for UI, highly technical and clean look.",
+    "overlays": "Hero images must have a gradient overlay to ensure text readability (e.g., bg-gradient-to-r from-[#071E3D]/90 via-[#071E3D]/50 to-transparent)."
+  },
+  "image_urls": {
+    "hero": [
+      {
+        "url": "https://images.unsplash.com/photo-1609337231803-2adad48ea1d1",
+        "description": "Offshore vessel in ocean - Use as the primary hero background. Apply dark navy gradient overlay."
+      }
+    ],
+    "business_units": [
+      {
+        "url": "https://images.unsplash.com/photo-1473968512647-3e447244af8f",
+        "description": "Drone flying - Use for Technology Distribution / Geospatial mapping."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1598408745613-178751e2ccde",
+        "description": "Offshore vessel - Use for Marine Project Support unit."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0",
+        "description": "Digital dashboard - Use for Digital Products unit."
+      }
+    ],
+    "industries": [
+      {
+        "url": "https://images.unsplash.com/photo-1697599426273-93e13129bcbc",
+        "description": "Oil rig - Use for Oil & Gas / Offshore Energy industry."
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1582517378602-f109b395ce40",
+        "description": "Aerial city/port view - Use for Ports & Dredging or Infrastructure."
+      }
+    ],
+    "digital_products": [
+      {
+        "url": "https://images.unsplash.com/photo-1748609160056-7b95f30041f0",
+        "description": "Analyzing data on tablet - Use for Offshore Workforce & Field Operations Platform section."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Design a B2B corporate marine/offshore technology website targeting EPC contractors and oil & gas companies. The tone must be highly professional, technical, and trustworthy (like Kongsberg Maritime or Teledyne Marine).",
+    "Use 'Outfit' for all headings and 'Manrope' for body text. Install these via Google Fonts.",
+    "Follow the color palette strictly: #071E3D (Navy) for main structure, #1F2933 for dark text, and #00AEEF (Electric Blue) for call-to-actions.",
+    "Implement a sticky premium navigation bar with a glassmorphism effect (bg-white/90, backdrop-blur). Include an EN/ID language toggle button.",
+    "For the hero section, use the provided offshore vessel image with a dark navy gradient overlay from the left so the headline text is highly legible. Include dual CTAs.",
+    "Build the 3 Business Units (Technology Distribution, Marine Project Support, Digital Products) as prominent Bento-style cards with hover states (soft shadow and slight lift).",
+    "Build a 'Why Sonar' section with 6 grid items and icons using lucide-react.",
+    "For the 'Featured Technology brands' (Baywei, Imajing, GreenValley, DJI Enterprise, GroundProbe, Sonardyne, Kongsberg, Teledyne, EIVA), DO NOT use image placeholders. Instead, use clean typographic treatments (styled text) representing the brands in a grid or scrolling marquee.",
+    "Create an 'Industries Served' section with images and dark/gradient overlays.",
+    "Ensure the Project Lifecycle visual in Marine Project Support uses a connected step/timeline design (Planning -> Mobilization -> Installation -> Commissioning -> Execution -> Data Processing -> Reporting -> Demobilization).",
+    "Implement the Digital Products section highlighting 5 modules and subscription tiers (Starter, Professional, Enterprise) using clean pricing-style cards.",
+    "Add 'data-testid' to all buttons, links, and forms for automated testing.",
+    "Include subtle bathymetry/sonar line patterns as CSS background accents on solid sections to reflect the marine theme without overpowering the content."
+  ]
+}
