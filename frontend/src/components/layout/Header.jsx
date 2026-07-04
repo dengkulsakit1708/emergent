@@ -75,19 +75,24 @@ const Header = () => {
       <div className="container-x flex items-center justify-between h-20">
         {/* Logo */}
         <Link to="/" data-testid="logo-link" className="flex items-center gap-2.5 group">
-          <div className="relative w-9 h-9 flex items-center justify-center rounded-lg bg-[#00AEEF]/15 border border-[#00AEEF]/30">
-            <svg viewBox="0 0 32 32" className="w-5 h-5 text-[#00AEEF]" fill="none" stroke="currentColor" strokeWidth="2">
-              <circle cx="16" cy="16" r="3" />
-              <circle cx="16" cy="16" r="8" opacity="0.6" />
-              <circle cx="16" cy="16" r="13" opacity="0.3" />
-            </svg>
-          </div>
-          <div className="flex flex-col leading-tight">
-            <span className={`font-display font-bold text-lg tracking-tight ${logoColor}`}>SONAR</span>
-            <span className={`text-[10px] uppercase tracking-[0.18em] font-mono-tech ${transparentTop ? "text-white/60" : "text-[#4B5563]"}`}>
-              Nusantara Utama
-            </span>
-          </div>
+          {transparentTop ? (
+            // Text logo on dark hero — mirrors the wordmark with yellow accent
+            <div className="flex flex-col leading-none">
+              <span className="font-display font-bold text-2xl tracking-[0.08em] text-white flex items-baseline">
+                SON<span className="relative inline-block">A<span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-3.5 h-1 rounded-full bg-[#F5B800]"></span></span>R
+              </span>
+              <span className="text-[9px] uppercase tracking-[0.22em] font-mono-tech text-white/60 mt-1">
+                Marine &amp; Geospatial Technology
+              </span>
+            </div>
+          ) : (
+            <img
+              src="https://customer-assets.emergentagent.com/job_sonar-tech-hub/artifacts/wahq5wl2_Intro%20Logo%20Sonar.png"
+              alt="PT Sonar Nusantara Utama"
+              className="h-16 w-auto -my-2"
+              style={{ mixBlendMode: "multiply" }}
+            />
+          )}
         </Link>
 
         {/* Desktop nav */}

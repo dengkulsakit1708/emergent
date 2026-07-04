@@ -30,19 +30,12 @@ const Footer = () => {
         <div className="grid lg:grid-cols-12 gap-12">
           {/* Brand */}
           <div className="lg:col-span-4">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="w-11 h-11 flex items-center justify-center rounded-lg bg-[#00AEEF]/15 border border-[#00AEEF]/30">
-                <svg viewBox="0 0 32 32" className="w-6 h-6 text-[#00AEEF]" fill="none" stroke="currentColor" strokeWidth="2">
-                  <circle cx="16" cy="16" r="3" />
-                  <circle cx="16" cy="16" r="8" opacity="0.6" />
-                  <circle cx="16" cy="16" r="13" opacity="0.3" />
-                </svg>
+            <div className="mb-5">
+              <div className="font-display font-bold text-2xl tracking-[0.08em] text-white flex items-baseline">
+                SON<span className="relative inline-block">A<span className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-3.5 h-1 rounded-full bg-[#F5B800]"></span></span>R
               </div>
-              <div>
-                <div className="font-display font-bold text-xl">SONAR</div>
-                <div className="text-[10px] uppercase tracking-[0.18em] font-mono-tech text-white/60">
-                  PT Sonar Nusantara Utama
-                </div>
+              <div className="text-[9px] uppercase tracking-[0.22em] font-mono-tech text-white/60 mt-2">
+                PT Sonar Nusantara Utama · Marine &amp; Geospatial Technology
               </div>
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-sm mb-6">
@@ -58,11 +51,11 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="w-4 h-4 mt-0.5 text-[#00AEEF] shrink-0" />
-                <a href="mailto:info@sonar-nu.com" className="hover:text-white">info@sonar-nu.com</a>
+                <a href="mailto:sales@sonar-nusantara.co.id" className="hover:text-white">sales@sonar-nusantara.co.id</a>
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="w-4 h-4 mt-0.5 text-[#00AEEF] shrink-0" />
-                <span>+62 21 0000 0000</span>
+                <a href="tel:+628111165969" className="hover:text-white">+62 811 116 5969</a>
               </div>
             </div>
           </div>

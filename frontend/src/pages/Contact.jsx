@@ -106,7 +106,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-display font-semibold text-[#071E3D]">Email</div>
-                    <a href="mailto:info@sonar-nu.com" className="text-[#4B5563] text-sm mt-1 hover:text-[#00AEEF]">info@sonar-nu.com</a>
+                    <a href="mailto:sales@sonar-nusantara.co.id" className="text-[#4B5563] text-sm mt-1 hover:text-[#00AEEF] block">sales@sonar-nusantara.co.id</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -115,7 +115,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className="font-display font-semibold text-[#071E3D]">{t("Phone", "Telepon")}</div>
-                    <div className="text-[#4B5563] text-sm mt-1">+62 21 0000 0000</div>
+                    <a href="tel:+628111165969" className="text-[#4B5563] text-sm mt-1 hover:text-[#00AEEF] block">+62 811 116 5969</a>
                   </div>
                 </div>
               </div>
